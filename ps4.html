@@ -1,0 +1,274 @@
+<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog -->
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ps4.css">
+    <script src="search.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#login">Sign in</a>
+        <a href="#register">Register</a>
+        <div style="float:right;">
+            <a href="#">Ship to</a>
+            <a href="#">Sell</a>
+            <a href="#">Watchlist</a>
+            <a href="#"><i class="fa fa-fw fa-bell"></i></a>
+            <a href="#"><i class="fa fa-fw fa-cart-plus"></i></a>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="#default" class="logo"><img id="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/90/Comodo-Dragon-logo-256x256.png"></a>
+        <form action="/action_page.php" class="form">
+            <input type="search" placeholder="Search for anything ..." id="searchbar" onkeyup="search_vehicles()"
+                name="gsearch" class="input">
+            <input type="submit" class="submit">
+        </form>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2 id="random">Auto Mobile</h2>
+                <h5>by shop Category</h5>
+                <div>
+                    <a class="" href="#home">Virtual Reality Headsets, Parts & Accessories</a>
+                    <a href="#news">Consumer Electronics Mixed Lots</a>
+                    <a href="#contact">Surveillance & Smart Home Electronics</a>
+                    <a href="#about">Multipurpose Batteries & Power</a>
+                    <a class="" href="#home">Vehicle Electronics & GPS</a>
+                    <a href="#news">Radio Communication Electronics</a>
+                    <a href="#contact">Smart Home</a>
+                    <a href="#about">Cameras & Photo</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2 id="shop">Shop by Category</h2>
+                <!--<ol id='list'>
+                    <li class="vehicles">Abarth</li>
+                    <li class="vehicles">Acura</li>
+                    <li class="vehicles">BMW</li>
+                    <li class="vehicles">Buick</li>
+                    <li class="vehicles">Cadillac</li>
+                    <li class="vehicles">Chevrolet</li>
+                    <li class="vehicles">Dacia</li>
+                    <li class="vehicles">Dodge</li>
+                    <li class="vehicles">Ferrari</li>
+                    <li class="vehicles">Ford</li>
+                    <li class="vehicles">GMC</li>
+                    <li class="vehicles">Honda</li>
+                    <li class="vehicles">Hummer</li>
+                    <li class="vehicles">Infiniti</li>
+                    <li class="vehicles">Isuzu</li>
+                    <li class="vehicles">Jaguar</li>
+                    <li class="vehicles">Kia</li>
+                    <li class="vehicles">Lamborghini</li>
+                    <li class="vehicles">Land Rover</li>
+                    <li class="vehicles">Mitsubishi</li>
+                    </ol>-->
+
+                <div id="lists">
+                    <div class="car-row row1">
+                        <div class="vehicles">
+                            <a target="_blank" href="img/abarth.jpg">
+                                <img src="img/abarth.jpg" alt="abarth" width="275" height="200">
+                            </a>
+                            <div class="desc">Abarth</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/acura.jpg">
+                                <img src="img/acura.jpg" alt="Acura" width="275" height="200">
+                            </a>
+                            <div class="desc">Acura</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/bmw.jpg">
+                                <img src="img/bmw.jpg" alt="BMW" width="275" height="200">
+                            </a>
+                            <div class="desc">BMW</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/buick.jpg">
+                                <img src="img/buick.jpg" alt="buick" width="275" height="200">
+                            </a>
+                            <div class="desc">Buick</div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="car-row row2">
+                        <div class="vehicles">
+                            <a target="_blank" href="img/cadillac.jpg">
+                                <img src="img/cadillac.jpg" alt="Cadillac" width="600" height="400">
+                            </a>
+                            <div class="desc">Cadillac</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/chevrolet.jpg">
+                                <img src="img/chevrolet.jpg" alt="Chevrolet" width="275" height="183">
+                            </a>
+                            <div class="desc">Chevrolet</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/dacia.jpg">
+                                <img src="img/dacia.jpg" alt="Dacia" width="600" height="400">
+                            </a>
+                            <div class="desc">Dacia</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/dodge.jpg">
+                                <img src="img/dodge.jpg" alt="Dodge" width="600" height="400">
+                            </a>
+                            <div class="desc">Dodge</div>
+                        </div>
+
+                    </div>
+                    <div class="car-row row3">
+                        <div class="vehicles">
+                            <a target="_blank" href="img/ferrari.jpg">
+                                <img src="img/ferrari.jpg" alt="Ferrari" width="600" height="400">
+                            </a>
+                            <div class="desc">Ferrari</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/ford.jpg">
+                                <img src="img/ford.jpg" alt="ford" width="600" height="400">
+                            </a>
+                            <div class="desc">Ford</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/GMC.jpg">
+                                <img src="img/GMC.jpg" alt="GMC" width="600" height="400">
+                            </a>
+                            <div class="desc">GMC</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/honda.jpg">
+                                <img src="img/honda.jpg" alt="honda" width="600" height="400">
+                            </a>
+                            <div class="desc">Honda</div>
+                        </div>
+
+                    </div>
+                    <div class="car-row row4">
+                        <div class="vehicles">
+                            <a target="_blank" href="img/hummer.jpg">
+                                <img src="img/hummer.jpg" alt="hummer" width="600" height="400">
+                            </a>
+                            <div class="desc">Hummer</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/infiniti.jpg">
+                                <img src="img/infiniti.jpg" alt="infiniti" width="600" height="400">
+                            </a>
+                            <div class="desc">Infiniti</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/isuzu.jpg">
+                                <img src="img/isuzu.jpg" alt="Isuzu" width="600" height="400">
+                            </a>
+                            <div class="desc">Isuzu</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/jaguar.jpg">
+                                <img src="img/jaguar.jpg" alt="jaguar" width="600" height="400">
+                            </a>
+                            <div class="desc">Jaguar
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="car-row row5">
+                        <div class="vehicles">
+                            <a target="_blank" href="img/kia.jpg">
+                                <img src="img/kia.jpg" alt="Kia" width="600" height="400">
+                            </a>
+                            <div class="desc">Kia</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/lamborghini.jpg">
+                                <img src="img/lamborghini.jpg" alt="lamborghini" width="600" height="400">
+                            </a>
+                            <div class="desc">Lamborghini</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/land-rover.jpg">
+                                <img src="img/land-rover.jpg" alt="Land Rover" width="600" height="400">
+                            </a>
+                            <div class="desc">Land Rover</div>
+                        </div>
+
+                        <div class="vehicles">
+                            <a target="_blank" href="img/Mitsubishi.jpg">
+                                <img src="img/Mitsubishi.jpg" alt="Mitsubishi" width="600" height="400">
+                            </a>
+                            <div class="desc">Mitsubishi</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!-- <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div> -->
+        </div>
+    </div>
+    <div id="footer">
+        <a href="#">About Holly</a>
+        <a href="#">Anouncements</a>
+        <a href="#">Community</a>
+        <a href="#">Security Center</a>
+        <a href="#">Resolution Center</a>
+        <a href="#">Information center</a>
+        <a href="#">Policies</a>
+        <a href="#">Help & Contact</a>
+        <a href="#">Site Map</a> <br>
+
+        <!-- <div >
+        <p>Copyright © 1995-2021 eBay Inc. All Rights Reserved.</p>
+      </div> -->
+    </div>
+</body>
+
+</html>
